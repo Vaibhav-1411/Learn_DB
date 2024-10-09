@@ -78,6 +78,7 @@ public class JobCall {
 					callstmt.setString(3, salary);
 
 					callstmt.execute();
+					
 					System.out.println("Employee added and job enabled.");
 					bl = true;
 
@@ -114,6 +115,7 @@ public class JobCall {
 					callstmt = con.prepareCall(deletesql);
 					callstmt.setInt(1, delId);
 					callstmt.execute();
+					
 					System.out.println("ID: " + delId + " deleted");
 					bl = true;
 				}
